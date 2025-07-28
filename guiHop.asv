@@ -135,7 +135,7 @@ for i=1:nfiles
 %     pause(0.5);
 end
 
-% Patterns pseudi-inverse matrix
+% Hebbian calculation
 Pi=((patrones'*patrones)^-1)*patrones';
 
 % Calculated weights matrix
@@ -359,10 +359,8 @@ prueba=imresize(prueba,[dim dim]);
 % Displays
 imshow(prueba,'Parent',handles.axes1,'InitialMagnification','fit');
 
-% TODO: Logic could be re-storing the already processed pattern
-% TODO: Change callbacks for better readability
-% TODO: Check slider implementation for time between steps
-% TODO: Implement "Stopped" logic for when the processing is done and/or
-%   prevent interaction with GUI until process is done (consider stop
-%   button)
-% TODO: Application of writing recognition?
+%TODO: Logic could be re-storing the already processed pattern
+%TODO: Change callbacks for better readability
+%TODO: Check slider implementation for time between steps
+%TODO: Implement "Stopped" logic for when the processing is done and/or
+%   prevent 
